@@ -18,7 +18,7 @@ const NavBar = () => {
       <div className="flex w-4/5 mx-auto justify-between"> {/* navbar container */}
         <div className="flex justify-start space-x-4 py-3 items-center">
           {navPages.map((page) => (
-            <Link href={page.adress} passHref>
+            <Link key={page.id} href={page.adress} passHref>
               <NavBtn pageLink={page.adress} curPage={curPage}>
                 {page.name}
               </NavBtn>
