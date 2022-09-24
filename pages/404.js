@@ -40,7 +40,7 @@ export default function NotFound() {
   }, [])
 
   return(
-  <div>
+  <div className="font-igraSans">
     <NavBar/>
     <div className="flex justify-center transition-colors -mt-[4rem]">
         <div className="overflow-visible flex shrink w-4/5 place-content-center items-center flex-col h-screen min-h-[4.75rem] text-center">

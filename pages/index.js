@@ -12,7 +12,7 @@ export default function Home() {
   
 
   return (
-    <div>
+    <div className="font-igraSans">
       <Head>
         <title>Главная страница</title>
       </Head>

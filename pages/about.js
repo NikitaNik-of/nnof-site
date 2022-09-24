@@ -10,7 +10,7 @@ import NavBar from "../components/NavBar";
 export default function About() {
 
     return(
-    <>
+    <div className=" font-igraSans">
         <NavBar/>
         <Layout>
             <Head>
@@ -18,6 +18,6 @@ export default function About() {
             </Head>
             <h1 className=" text-6xl mb-3 ">This is about page</h1>
         </Layout>
-    </>
+    </div>
     )
 }
