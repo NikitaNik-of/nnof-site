@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: "Igra Sans";
-    src: url('../public/fonts/IgraSans.otf') format("otf");
+    src: local('../public/fonts/IgraSans.otf') format("otf");
 }
 
 html {
