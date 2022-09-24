@@ -6,7 +6,11 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Igra Sans', 'sans-serif']
+      },
+    },
   },
   plugins: [],
 }
