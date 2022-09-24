@@ -3,8 +3,13 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "Igra Sans";
-    src: local('../public/fonts/IgraSans.otf') format("otf");
+    font-family: 'Igra Sans';
+    src: url('../public/fonts/IgraSans.woff2') format('woff2'),
+        url('../public/fonts/IgraSans.woff') format('woff'),
+        url('../public/fonts/IgraSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 html {
