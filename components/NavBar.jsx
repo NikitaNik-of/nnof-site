@@ -11,7 +11,7 @@ const NavBar = () => {
   const [navPages, setNavPages] = useState([
     { id: 1, name: "Главная страница", adress: "/" },
     { id: 2, name: "О сайте", adress: "/about" },
-    { id: 3, name: "404", adress: "/404" },
+    //{ id: 404, name: "404", adress: "/404" },
   ]);
 
   return (
