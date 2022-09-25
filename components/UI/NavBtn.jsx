@@ -10,7 +10,7 @@ const NavBtn = ({ curPage, pageLink, children, ...props }) => {
     }
 
   return (
-    <button {...props} className={cl(curPage, pageLink) + ' rounded-2xl px-3 py-1 border-2 transition-colors box-content'}>
+    <button {...props} className={cl(curPage, pageLink) + ' rounded-2xl px-3 py-1 border-2 transition-colors box-content align-middle text-center text-sm tracking-wide'}>
       {children}
     </button>
   );

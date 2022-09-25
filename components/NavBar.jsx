@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState, useTransition } from "react";
 import ThemeChng from "./ThemeChng";
+import MainButton from "./UI/MainButton";
 import NavBtn from "./UI/NavBtn";
 
 
@@ -26,7 +27,7 @@ const NavBar = () => {
             </Link>
           ))}
         </div>
-        <div className="flex justify-end">
+        <div className="flex items-center">
           <ThemeChng/>
         </div>
       </div>

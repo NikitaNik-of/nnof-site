@@ -8,7 +8,7 @@ const MainButton = ({disabled, children, ...props}) => {
   }
 
   return (
-    <button {...props} className={btnStatus(disabled) + ' dark:border-gray-600 rounded-lg border-2 border-gray-500 m-1 pb-1 pt-2 px-3'}>
+    <button {...props} className={btnStatus(disabled) + ' dark:border-gray-600 rounded-lg border-2 border-gray-500 m-1 py-1 px-3'}>
         {children}
     </button>
   )

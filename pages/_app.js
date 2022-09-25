@@ -3,7 +3,7 @@ import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
   return(
-    <ThemeProvider attribute='class' enableSystem={true}>
+    <ThemeProvider attribute='class' enableSystem>
       <Component {...pageProps}/>
     </ThemeProvider>
   )
