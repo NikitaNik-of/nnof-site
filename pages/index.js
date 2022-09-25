@@ -18,9 +18,9 @@ export default function Home() {
       </Head>
       <NavBar/>
       <div className='flex flex-col justify-center text-center items-center py-32 bg-slate-50 dark:bg-slate-900'>
-        <div className="flex transition-all space-x-4 items-center mb-8">
-          <SlideUp pauseFor={0}>
-            <Image src={wave} height={90} width={90} layout="fixed" placeholder="blur" className=" overflow-visible"/>
+        <div className="flex transition-all space-x-4 items-center mb-8 overflow-visible">
+          <SlideUp className=" overflow-visible" pauseFor={0}>
+            <Image unoptimized src={wave} height={90} width={90} layout="fixed" placeholder="blur" className=" overflow-visible"/>
           </SlideUp>
           <SlideUp pauseFor={0} className="text-6xl font-bold">Привет!
           </SlideUp>
