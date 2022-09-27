@@ -1,0 +1,7 @@
+{
+    "navPages":[
+        { "id": 1, "name": "Главная страница", "address": "/", "icon": "Home" },
+        { "id": 2, "name": "О сайте", "address": "/about", "icon": "Info"  },
+        { "id": 3, "name": "404", "address": "/404", "icon": "test"  }
+    ]
+}

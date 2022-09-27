@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        igraSans: ['Igra Sans', 'sans-serif']
+        igraSans: ['Igra Sans', 'sans-serif'],
+        consolas: ['Consolas']
       },
     },
   },
