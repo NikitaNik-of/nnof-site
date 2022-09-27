@@ -18,7 +18,7 @@
         url('../public/fonts/Consolas.woff2') format('woff2'),
         url('../public/fonts/Consolas.woff') format('woff'),
         url('../public/fonts/Consolas.ttf') format('truetype');
-    font-weight: 400;
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
