@@ -2,7 +2,7 @@ import Link from "next/link";
 import Head from "next/head";
 import Layout from "../components/Layout";
 import Image from 'next/image'
-import pooound from '../public/images/pooound.webp'
+import pooound from '../public/images/fist.webp'
 import NavBar from "../components/NavBar";
 import MainButton from "../components/UI/MainButton";
 import { useEffect, useState } from "react";
