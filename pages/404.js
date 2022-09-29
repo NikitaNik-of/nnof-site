@@ -4,11 +4,11 @@ import React, { useEffect, useState } from "react";
 import Layout from "../components/Layout";
 import NavBar from "../components/NavBar";
 import MainButton from "../components/UI/MainButton";
-import iconMono from '../public/images/monoglass.png';
-import iconBot from '../public/images/robot.png';
-import iconFlushed from '../public/images/flushed.png';
-import iconScull from '../public/images/skull.png';
-import iconTeeth from '../public/images/teeth.png'
+import iconMono from '../public/images/monoglass.webp';
+import iconBot from '../public/images/robot.webp';
+import iconFlushed from '../public/images/flushed.webp';
+import iconScull from '../public/images/skull.webp';
+import iconTeeth from '../public/images/teeth.webp'
 
 export default function NotFound() {
   const [motd, setMotd] = useState({source: {iconMono}, title: '', subtitle: '', cl: ''})
@@ -47,7 +47,7 @@ export default function NotFound() {
   return(
   <div>
     <NavBar/>
-    <div className="flex justify-center transition-colors -mt-[4rem] overflow-visible">
+    <div className="flex justify-center transition-colors h-full overflow-visible">
         <div className={"overflow-visible flex shrink w-4/5 place-content-center items-center flex-col h-screen min-h-[4.75rem] text-center font-semibold" + motd.cl}>
           <h1 className="text-7xl mb-1">404</h1>
           <div className="m-8 overflow-visible"><Image className=" overflow-visible" placeholder='blur' src={motd.source} width={110} height={110} unoptimized/></div>

@@ -2,7 +2,7 @@ import Link from "next/link";
 import Head from "next/head";
 import Layout from "../components/Layout";
 import Image from 'next/image'
-import wave from '../public/images/wave.png'
+import wave from '../public/images/wave.webp'
 import NavBar from "../components/NavBar";
 import MainButton from "../components/UI/MainButton";
 import { useEffect, useState } from "react";
@@ -17,12 +17,12 @@ export default function Home() {
         <title>Главная страница</title>
       </Head>
       <NavBar/>
-      <div className='flex flex-col justify-center text-center items-center py-20 lg:py-32 bg-slate-50 dark:bg-slate-900'>
-        <div className="flex transition-all space-x-4 items-center mb-8 overflow-visible">
+      <div className='flex flex-col justify-center text-center items-center h-screen bg-slate-50 dark:bg-slate-900 '>
+        <div className="flex justify-center text-center transition-all space-x-4 items-center mb-8 overflow-visible">
           <SlideUp className="flex overflow-visible" pauseFor={0}>
             <Image unoptimized src={wave} height={90} width={90} layout="fixed" placeholder="blur" className=" overflow-visible"/>
           </SlideUp>
-          <SlideUp pauseFor={0} className=" text-5xl lg:text-6xl font-bold">Привет!
+          <SlideUp pauseFor={0} className=" text-5xl lg:text-6xl font-bold">Йоу!
           </SlideUp>
         </div>
         <div className="transition-all text-2xl lg:text-3xl my-2 flex space-x-2 flex-wrap justify-center">

@@ -9,11 +9,11 @@ const ThemeChng = () => {
   const [mounted, setMounted] = useState(false);
   
   const iconPlacer = () => {
-    if (theme == 'dark') {
-      return(<SunIcon className="text-white h-6 w-6 m-1 "/>)
+    if (theme == 'light') {
+      return(<MoonIcon className="text-black h-6 w-6 m-1 "/>)
     }
     else{
-      return(<MoonIcon className="text-black h-6 w-6 m-1 "/>)
+      return(<SunIcon className="text-white h-6 w-6 m-1 "/>)
     }
   }
 

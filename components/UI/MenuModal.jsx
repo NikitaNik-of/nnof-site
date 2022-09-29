@@ -3,7 +3,7 @@ import MainButton from './MainButton'
 import pagesInfo from "../../api/pages.json"
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { HomeIcon, InformationCircleIcon, CubeTransparentIcon } from '@heroicons/react/24/outline'
+import { HomeIcon, InformationCircleIcon, CubeTransparentIcon, LinkIcon } from '@heroicons/react/24/outline'
 
 const MenuModal = ({isVisible}) => {
   const [Pages, setPages] = useState(pagesInfo.navPages)
@@ -28,11 +28,11 @@ const MenuModal = ({isVisible}) => {
       case 'Home':
         return(<HomeIcon className='text-black dark:text-white h-6 w-6 mr-3 '/>)
     
-      case 'Info':
-        return(<InformationCircleIcon className='text-black dark:text-white h-6 w-6 mr-3 '/>)
+      case 'link':
+        return(<LinkIcon className='text-black dark:text-white h-6 w-6 mr-3 '/>)
       
       case 'test':
-      return(<CubeTransparentIcon className='text-black dark:text-white h-6 w-6 mr-3 '/>)
+        return(<CubeTransparentIcon className='text-black dark:text-white h-6 w-6 mr-3 '/>)
   
       default:
         break;

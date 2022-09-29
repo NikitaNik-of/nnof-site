@@ -15,7 +15,7 @@ const NavBar = () => {
   const [mobMenu, setMobMenu] = useState(false)
 
   return (
-    <nav className="transition-colors backdrop-blur top-0 z-40 sticky bg-white/70 dark:bg-gray-900/70 border-b-[0.5px] border-gray-400 dark:border-gray-800 flex justify-center"> {/* base of navbar */}
+    <nav className="transition-colors backdrop-blur top-0 z-40 fixed w-screen h-16 bg-white/70 dark:bg-gray-900/70 border-b-[0.5px] border-gray-400 dark:border-gray-800 flex justify-center"> {/* base of navbar */}
       <div className="max-w-7xl hidden lg:visible lg:flex w-4/5 mx-auto justify-between items-center"> {/* navbar container */}
         <div className="flex justify-start space-x-4 py-3 items-center">
           {Pages.map((page) => (
@@ -30,7 +30,7 @@ const NavBar = () => {
           <ThemeChng/>
         </div>
       </div>
-      <div className="flex my-auto mx-2 w-4/5 justify-between items-center lg:hidden"> {/* mobile navbar container */}
+      <div className="flex my-auto mx-2 w-full justify-between items-center lg:hidden"> {/* mobile navbar container */}
         <div className="flexitems-center m-0 p-2">
           <button onClick={() => (mobMenu) ? setMobMenu(false) : setMobMenu(true) } className='bg-transparent hover:bg-gray-200 dark:hover:bg-gray-800 aspect-square rounded-2xl p-1 transition-colors box-content align-middle text-center text-sm tracking-wide'>
             <HomeIcon className="h-6 w-6 m-1 bg-transparent text-black dark:text-white text-center"/>
