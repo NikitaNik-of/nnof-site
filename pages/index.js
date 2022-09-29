@@ -2,7 +2,7 @@ import Link from "next/link";
 import Head from "next/head";
 import Layout from "../components/Layout";
 import Image from 'next/image'
-import wave from '../public/images/wave.webp'
+import pooound from '../public/images/pooound.webp'
 import NavBar from "../components/NavBar";
 import MainButton from "../components/UI/MainButton";
 import { useEffect, useState } from "react";
@@ -20,7 +20,7 @@ export default function Home() {
       <div className='flex flex-col justify-center text-center items-center h-screen bg-slate-50 dark:bg-slate-900 '>
         <div className="flex justify-center text-center transition-all space-x-4 items-center mb-8 overflow-visible">
           <SlideUp className="flex overflow-visible" pauseFor={0}>
-            <Image unoptimized src={wave} height={90} width={90} layout="fixed" placeholder="blur" className=" overflow-visible"/>
+            <Image unoptimized src={pooound} height={90} width={90} layout="fixed" placeholder="blur" className=" overflow-visible"/>
           </SlideUp>
           <SlideUp pauseFor={0} className=" text-5xl lg:text-6xl font-bold">Йоу!
           </SlideUp>
