@@ -4,13 +4,14 @@ import React, { useEffect, useState } from "react";
 import Layout from "../components/Layout";
 import NavBar from "../components/NavBar";
 import MainButton from "../components/UI/MainButton";
-import iconMono from '../public/images/monoglass.png';
-import iconBot from '../public/images/robot.png';
-import iconFlushed from '../public/images/flushed.png';
-import iconScull from '../public/images/skull.png'
+import iconMono from '../public/images/monoglass.webp';
+import iconBot from '../public/images/robot.webp';
+import iconFlushed from '../public/images/flushed.webp';
+import iconScull from '../public/images/skull.webp';
+import iconTeeth from '../public/images/teeth.webp'
 
 export default function NotFound() {
-  const [motd, setMotd] = useState({source: {iconMono}, title: '', subtitle: ''})
+  const [motd, setMotd] = useState({source: {iconMono}, title: '', subtitle: '', cl: ''})
 
 
   const setMessage = (min, max) => {
@@ -21,29 +22,33 @@ export default function NotFound() {
           break;
       
         case 2:
-          setMotd({source: iconBot, title: 'Биб-боп. Планета Шелезяка.', subtitle: ' Полезных ископаемых нет, воды нет, растительности нет. Населена роботами. Улетаем домой?'})
+          setMotd({source: iconBot, title: '{Биб-буп. Планета Шелезяка.}', subtitle: ' Полезных ископаемых нет, воды нет, растительности нет. Населена роботами. Улетаем домой?', cl:' font-consolas'})
           break;
     
         case 3:
           setMotd({source: iconScull, title: '', subtitle: ''})
           break;
         
-        default:
+        case 4:
           setMotd({source: iconFlushed, title: 'А где... все?..', subtitle: 'В-вернуться домой?'})
+          break;
+        
+        default:
+          setMotd({source: iconTeeth, title: 'Упс!..', subtitle: 'Кажется такой страницы нет.'})
           break;
       }
   }
   
   
   useEffect(() => {
-    setMessage(0, 3)
+    setMessage(0, 7)
   }, [])
 
   return(
-  <div className="font-igraSans">
+  <div>
     <NavBar/>
-    <div className="flex justify-center transition-colors -mt-[4rem] overflow-visible">
-        <div className="overflow-visible flex shrink w-4/5 place-content-center items-center flex-col h-screen min-h-[4.75rem] text-center">
+    <div className="flex justify-center transition-colors h-full overflow-visible">
+        <div className={"overflow-visible flex shrink w-4/5 place-content-center items-center flex-col h-screen min-h-[4.75rem] text-center font-semibold" + motd.cl}>
           <h1 className="text-7xl mb-1">404</h1>
           <div className="m-8 overflow-visible"><Image className=" overflow-visible" placeholder='blur' src={motd.source} width={110} height={110} unoptimized/></div>
           <h1 className="text-3xl empty:hidden">{motd.title}</h1>

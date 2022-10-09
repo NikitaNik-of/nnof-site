@@ -3,12 +3,14 @@ module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
+    './api/**/*.json'
   ],
   darkMode: 'class',
   theme: {
     extend: {
       fontFamily: {
-        igraSans: ['Igra Sans', 'sans-serif']
+        igraSans: ['Igra Sans', 'sans-serif'],
+        consolas: ['Consolas']
       },
     },
   },
