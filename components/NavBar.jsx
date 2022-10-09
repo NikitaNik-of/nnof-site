@@ -4,7 +4,7 @@ import React, { useState, useTransition } from "react";
 import ThemeChng from "./ThemeChng";
 import MainButton from "./UI/MainButton";
 import NavBtn from "./UI/NavBtn";
-import { HomeIcon } from "@heroicons/react/24/outline"
+import { Bars3Icon } from "@heroicons/react/24/outline"
 import MenuModal from "./UI/MenuModal";
 import pagesInfo from "../api/pages.json"
 
@@ -31,9 +31,9 @@ const NavBar = () => {
         </div>
       </div>
       <div className="flex my-auto mx-2 w-full justify-between items-center lg:hidden"> {/* mobile navbar container */}
-        <div className="flexitems-center m-0 p-2">
+        <div className=" flexitems-center m-0 p-2">
           <button onClick={() => (mobMenu) ? setMobMenu(false) : setMobMenu(true) } className='bg-transparent hover:bg-gray-200 dark:hover:bg-gray-800 aspect-square rounded-2xl p-1 transition-colors box-content align-middle text-center text-sm tracking-wide'>
-            <HomeIcon className="h-6 w-6 m-1 bg-transparent text-black dark:text-white text-center"/>
+            <Bars3Icon className="h-6 w-6 m-1 bg-transparent text-black dark:text-white text-center"/>
             <MenuModal isVisible={mobMenu}/>
           </button>
         </div>

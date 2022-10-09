@@ -1,10 +1,10 @@
 {
     "linkBtn" : [
-        {"id": 1, "type": "button", "name": "VK", "classBtn": "border-[#0077FF] hover:bg-[#b9daff] bg-[#8bc1ff] dark:bg-[#002046] hover:dark:bg-[#003674] ", "href": "https://vk.com/nikitanik__of"},
-        {"id": 2, "type": "button", "name": "Discord", "classBtn": "border-[#5865F2] hover:bg-[#d0d3fb] bg-[#b0b6f9] dark:bg-[#060c4f] hover:dark:bg-[#0b168e] ", "href": "https://discord.gg/w6DPjncAMb "},
-        {"id": 3, "type": "button", "name": "Twitch", "classBtn": "border-[#9146FF] hover:bg-[#dec8ff] bg-[#c9a4ff] dark:bg-[#25005b] hover:dark:bg-[#4800b3] ", "href": "https://www.twitch.tv/nikitanik_of/"},
-        {"id": 4, "type": "list", "name": "Youtube", "classBtn": "cursor-not-allowed dark:bg-[#4d0000] dark:border-[#4d0000] dark:text-gray-700 bg-[#ffb3b3] border-[#ffb3b3] text-gray-200", "href": ""},
-        {"id": 5, "type": "list", "name": "Telegram", "classBtn": "cursor-not-allowed dark:bg-[#00324b] dark:border-[#00324b] dark:text-gray-700 bg-[#e5f6ff] border-[#e5f6ff] text-gray-200", "href": ""},
-        {"id": 6, "type": "button", "name": "Boosty", "classBtn": "border-[#ff6600] hover:bg-[#ffd1b3] bg-[#ffb380] dark:bg-[#4d1f00] hover:dark:bg-[#803300] ", "href": "https://boosty.to/nikitanik_of"}
+        {"id": 1, "name": "VK", "classBtn": "border-[#0077FF] hover:bg-[#b9daff] bg-[#8bc1ff] dark:bg-[#002046] hover:dark:bg-[#003674] ", "href": "https://vk.com/nikitanik__of"},
+        {"id": 2, "name": "Discord", "classBtn": "border-[#5865F2] hover:bg-[#d0d3fb] bg-[#b0b6f9] dark:bg-[#060c4f] hover:dark:bg-[#0b168e] ", "href": "https://discord.gg/w6DPjncAMb "},
+        {"id": 3, "name": "Twitch", "classBtn": "border-[#9146FF] hover:bg-[#dec8ff] bg-[#c9a4ff] dark:bg-[#25005b] hover:dark:bg-[#4800b3] ", "href": "https://www.twitch.tv/nikitanik_of/"},
+        {"id": 4, "name": "Youtube", "classBtn": "border-[#ff0000] hover:bg-[#ffbcbc] bg-[#ffa1a1] dark:bg-[#400000] hover:dark:bg-[#7f0000]", "href": "https://www.youtube.com/channel/UCamczE3xY8f_UcF4ItttVgA"},
+        {"id": 5, "name": "Telegram", "classBtn": "border-[#0088cc] hover:bg-[#bce9ff] bg-[#86d7ff] dark:bg-[#002d43] hover:dark:bg-[#003f5e]", "href": "https://t.me/nikitanikof"},
+        {"id": 6, "name": "Boosty", "classBtn": "border-[#ff6600] hover:bg-[#ffd1b3] bg-[#ffb380] dark:bg-[#4d1f00] hover:dark:bg-[#803300] ", "href": "https://boosty.to/nikitanik_of"}
     ]
 }

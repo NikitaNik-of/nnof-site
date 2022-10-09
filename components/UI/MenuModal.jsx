@@ -10,8 +10,8 @@ const MenuModal = ({isVisible}) => {
   const [mounted, setMounted] = useState(false)
 
   const setVis = () => {
-    if (!isVisible) return 'hidden'
-    else return ''
+    if (!isVisible) return 'hidden '
+    else return 'visible '
   }
   
   useEffect(() => {
@@ -40,7 +40,7 @@ const MenuModal = ({isVisible}) => {
   }
 
   return (
-    <div className={setVis() + ' transition-all fixed z-50 inset-0 backdrop-blur-sm bg-slate-300/60 dark:bg-slate-700/60 overflow-y-auto min-h-screen min-w-full flex flex-col pt-16 py-4 px-6'}>
+    <div className={setVis() + '  transition-all fixed z-50 inset-0 backdrop-blur-sm bg-slate-300/60 dark:bg-slate-700/60 overflow-y-auto min-h-screen min-w-full flex flex-col pt-16 py-4 px-6'}>
       {Pages.map((page) => (
         <Link key={page.id} href={page.address} passHref>
           <MainButton className='text-left flex justify-start items-center'>
