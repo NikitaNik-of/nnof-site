@@ -27,7 +27,7 @@ const ThemeChng = () => {
   }
 
   return (
-      <button className= 'p-1 aspect-square bg-transparent hover:bg-gray-200 dark:hover:bg-gray-700 rounded-2xl transition-colors box-content align-middle text-center' onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
+      <button className= 'p-1 aspect-square bg-transparent border-2 border-gray-500/5 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-2xl transition-colors box-content align-middle text-center' onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
         {iconPlacer()}
       </button>
   )

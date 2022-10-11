@@ -2,6 +2,7 @@
     "navPages":[
         { "id": 1, "name": "Главная страница", "address": "/", "icon": "Home" },
         { "id": 2, "name": "Ссылки", "address": "/links", "icon": "link"  },
-        { "id": 3, "name": "404", "address": "/404", "icon": "test"  }
+        { "id": 3, "name": "Правила", "address": "/rules", "icon": "test"  },
+        { "id": 404, "name": "404", "address": "/404", "icon": "test"  }
     ]
 }

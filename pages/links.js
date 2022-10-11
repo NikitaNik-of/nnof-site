@@ -21,7 +21,7 @@ export default function Links() {
             <Head>
                 <title>Полезные ссылки</title>
             </Head>
-            <TitleHead/>
+            <TitleHead text="Ссылки"/>
             <div className="w-full flex flex-wrap lg:flex-nowrap">
                 {linkBtn.map((link) => (
                     <LinkButton key={link.id} className={link.classBtn} href={link.href}>
