@@ -45,7 +45,7 @@ export default function Rules() {
         <div className='bg-gray-300/30 dark:bg-gray-600/10 flex justify-center my-2 py-2'>
           <div className="py-2 px-4 w-3/4 text-sm lg:text-base">
             {ruleType.ruleList.map((rule) => (
-              <div id={rule.id} className='flex my-2 items-start'>
+              <div key={rule.id} className='flex my-2 items-start'>
                 <text className='rounded-lg m-1 px-1 text-right w-9'>{rule.id + '.'}</text>
                 <div className='mt-1 px-2'>{rule.text}</div>
               </div>
