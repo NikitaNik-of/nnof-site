@@ -48,7 +48,7 @@ export default function NotFound() {
   <div>
     <NavBar/>
     <div className="flex justify-center transition-colors h-full overflow-visible">
-        <div className={"overflow-visible flex shrink w-4/5 place-content-center items-center flex-col h-screen min-h-[4.75rem] text-center font-semibold" + motd.cl}>
+        <div className={"overflow-visible flex  w-4/5 place-content-center items-center flex-col h-screen min-h-[4.75rem] text-center font-semibold" + motd.cl}>
           <h1 className="text-7xl mb-1">404</h1>
           <div className="m-8 overflow-visible"><Image className=" overflow-visible" placeholder='blur' src={motd.source} width={110} height={110} unoptimized/></div>
           <h1 className="text-3xl empty:hidden">{motd.title}</h1>

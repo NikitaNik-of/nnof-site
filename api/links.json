@@ -1,5 +1,6 @@
 {
     "linkBtn" : [
+        {"id": 0, "name": "GitHub", "classBtn": "border-gray-600 dark:border-gray-400 hover:bg-[#e3e3e3] bg-[#cdcdcd] dark:bg-[#272727] hover:dark:bg-[#3d3d3d] ", "href": "https://github.com/NikitaNik-of"},
         {"id": 1, "name": "VK", "classBtn": "border-[#0077FF] hover:bg-[#b9daff] bg-[#8bc1ff] dark:bg-[#002046] hover:dark:bg-[#003674] ", "href": "https://vk.com/nikitanik__of"},
         {"id": 2, "name": "Discord", "classBtn": "border-[#5865F2] hover:bg-[#d0d3fb] bg-[#b0b6f9] dark:bg-[#060c4f] hover:dark:bg-[#0b168e] ", "href": "https://discord.gg/w6DPjncAMb "},
         {"id": 3, "name": "Twitch", "classBtn": "border-[#9146FF] hover:bg-[#dec8ff] bg-[#c9a4ff] dark:bg-[#25005b] hover:dark:bg-[#4800b3] ", "href": "https://www.twitch.tv/nikitanik_of/"},
