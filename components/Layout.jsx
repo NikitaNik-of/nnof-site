@@ -1,5 +1,4 @@
 import React from 'react'
-import cl from './Layout.module.css'
 
 const Layout = ({children, className}) => {
   return (

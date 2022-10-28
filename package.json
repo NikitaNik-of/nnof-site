@@ -10,10 +10,12 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.0.11",
+    "konva": "^8.3.13",
     "next": "12.3.0",
     "next-themes": "^0.2.1",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react": "^18.2.0",
+    "react-dom": "18.2.0",
+    "react-konva": "^18.2.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.11",
