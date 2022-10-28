@@ -5,7 +5,7 @@ import Layout from '../components/Layout'
 import NavBar from '../components/NavBar'
 import TitleHead from '../components/TitleHead'
 import rules from '../api/rules.json'
-import SubRules from '../components/rules/SubRules'
+import SubRules from '../components/rules/subRules'
 import MainButton from '../components/UI/MainButton'
 
 export default function Rules() {
