@@ -29,8 +29,10 @@ export default function Home() {
         <title>Главная страница</title>
       </Head>
       <NavBar/>
-      <FadeIn pauseFor={1000} className="absolute z-10 flex justify-center h-screen w-screen">
-          <Image src={themePick()} height={420} width={420} unoptimized className="fadeIn flex-none"/>
+      <FadeIn pauseFor={1000} className="absolute z-10 h-screen w-screen flex flex-col justify-center">
+        <div className="flex justify-center pb-32 pl-64">
+          <Image src={themePick()} height={800} width={800} unoptimized className=""/>
+        </div>
       </FadeIn>
       <Intro/>
       <Layout>
