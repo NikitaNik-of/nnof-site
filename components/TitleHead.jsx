@@ -25,7 +25,7 @@ const TitleHead = ({title, subtitle, hidtitle, imgName, ...props}) => {
         <SlideUp className='lg:mt-4 lg:mb-12 mt-2 mb-6 text-3xl lg:text-5xl'>
             {title}
         </SlideUp>
-        <SlideUp pauseFor={150} className=' mt-5 text-base lg:text-lg'>{subtitle}</SlideUp>
+        <SlideUp pauseFor={200} className=' mt-5 text-base lg:text-lg'>{subtitle}</SlideUp>
         <SlideUp pauseFor={300} className=' my-1 text-xs lg:text-base dark:text-gray-700 text-gray-300'>{hidtitle}</SlideUp>
     </div>
   )

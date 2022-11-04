@@ -19,7 +19,7 @@ const NavBar = () => {
       <div className="max-w-7xl hidden lg:visible lg:flex w-4/5 mx-auto justify-between items-center"> {/* navbar container */}
         <div className="flex justify-start space-x-4 py-3 items-center">
           {Pages.map((page) => (
-            <Link key={page.id} href={page.address} passHref>
+            <Link key={page.id} href={page.address}>
               <NavBtn pageLink={page.address} curPage={curPage}>
                 {page.name}
               </NavBtn>

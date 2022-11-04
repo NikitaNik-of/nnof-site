@@ -35,11 +35,11 @@ export default function Rules() {
             <button className={classIdCheck(2)} onClick={() => setRuleType(rules.telegram)}><div className='skew-x-6'>Telegram</div></button>
           </div>
         </div>
-        <div className='bg-gray-300/30 dark:bg-gray-600/10 flex justify-center my-2 py-2'>
-          <div className="py-2 px-4 w-3/4 text-sm lg:text-base">
+        <div className='bg-gray-300/30 dark:bg-gray-600/10 flex justify-center my-8 py-16 -skew-y-3'>
+          <div className="py-2 px-4 w-3/4 text-sm lg:text-base skew-y-3">
             {ruleType.ruleList.map((rule) => (
-              <div key={rule.id} className='flex my-2 items-start'>
-                <text className='rounded-lg m-1 px-1 text-right w-9'>{rule.id + '.'}</text>
+              <div key={rule.id} className={'flex my-2 items-start'}>
+                <text className={'rounded-lg m-1 px-1 text-right w-9'}>{rule.id + '.'}</text>
                 <div className='mt-1 px-2'>{rule.text}</div>
               </div>
             ))}

@@ -2,6 +2,16 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'i.ytimg.com',
+        port: '**',
+        pathname: '/vi/**',
+      },
+    ],
+  },
 }
 
 module.exports = nextConfig

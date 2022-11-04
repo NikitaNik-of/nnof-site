@@ -35,8 +35,7 @@ export default function Home() {
         </div>
       </FadeIn>
       <Intro/>
-      <Layout>
-      </Layout>
+      <Layout/>
     </div>
   );
 }
