@@ -25,7 +25,7 @@ const LinkBlock = (props) => {
       <Layout className=" bg-purple-300/50 dark:bg-purple-700/10 py-4">
         <div className="flex justify-between items-center">
           <div className="flex space-x-4 items-center">
-            <Image src={ytl} height={90} width={90} className="rounded-full"/>
+            <Image src={ytl} height={90} width={90} className="p-2 rounded-full"/>
             <div className="">
               <div className="text-lg lg:text-2xl">@NikitaNik_of</div>
               <div className="text-sm lg:text-base text-gray-500">

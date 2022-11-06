@@ -36,9 +36,13 @@ const VideoBlock = ( {video, ...props} ) => {
     return('Опубликованно ' + ans)
   }
 
+  const ytLoader = ({ src }) => {
+    return `https://i.ytimg.com/vi/${src}/maxresdefault.jpg`
+  }
+
   return (
     <a href={'https://www.youtube.com/watch?v=' + video.resourceId.videoId} className='w-auto h-auto rounded-lg bg-gray-100 dark:bg-gray-700/50 transition-all hover:bg-gray-200 hover:dark:bg-gray-700/70 hover:shadow-xl hover:shadow-purple-500/60 hover:dark:shadow-purple-800/50'>
-        <Image className='rounded-lg' src={video.thumbnails.maxres.url} width={1280} height={720}/>
+        <Image className='rounded-lg' loader={ytLoader} src={video.resourceId.videoId} width={1280} height={720}/>
         <div className='m-3 px-2 text-[14px] lg:text-sm mb-4 h-auto'>
           <div>{video.title}</div>
           <div className='text-gray-600 my-2'>{dateTrim(video.publishedAt)}</div>
