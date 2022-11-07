@@ -29,7 +29,7 @@ const LinkBlock = ({ playlistID, channelID, body, pic, ...props}) => {
       <Layout className={coloring(channelID) +" py-4"}>
         <div className="flex justify-between items-center">
           <div className="flex space-x-4 items-center">
-            <Image src={pic} height={90} width={90} className="p-2 rounded-full"/>
+            <Image alt="" src={pic} height={90} width={90} className="p-2 rounded-full"/>
             <div className="">
               <div className="text-base lg:text-2xl">{channelID}</div>
               <div className="text-[12px] lg:text-base text-gray-500">{body}</div>
