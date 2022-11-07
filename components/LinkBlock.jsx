@@ -48,7 +48,7 @@ const LinkBlock = ({ playlistID, channelID, body, pic, ...props}) => {
         <div className="my-4 grid grid-cols-2 lg:grid-cols-4 gap-6">
           {isLoading ?
           vidList.map(() => (
-            <LoadingVideoBlock/>
+            <LoadingVideoBlock key="None"/>
           ))
           : 
           vidList.map((video) => (
