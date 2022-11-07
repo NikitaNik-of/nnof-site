@@ -9,7 +9,7 @@ import VideoBlock from "./links/VideoBlock";
 import Image from "next/image";
 
 const LinkBlock = ({ playlistID, channelID, body, pic, ...props}) => {
-  const [vidList, setVidList] = useState([{}, {}, {}, {}]);
+  const [vidList, setVidList] = useState([{id: 0}, {id: 1}, {id: 2}, {id: 3}]);
   const [fetchVids, isLoading, vidsError] = useFetching(async () => {
     const response = await PostService.getAll(playlistID);
     setVidList(response.data.items);
@@ -47,8 +47,8 @@ const LinkBlock = ({ playlistID, channelID, body, pic, ...props}) => {
         </div>
         <div className="my-4 grid grid-cols-2 lg:grid-cols-4 gap-6">
           {isLoading ?
-          vidList.map(() => (
-            <LoadingVideoBlock key="None"/>
+          vidList.map((vid) => (
+            <LoadingVideoBlock key={vid.id}/>
           ))
           : 
           vidList.map((video) => (
