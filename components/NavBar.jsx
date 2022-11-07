@@ -15,7 +15,7 @@ const NavBar = () => {
   const [mobMenu, setMobMenu] = useState(false)
 
   return (
-    <nav className="transition-colors backdrop-blur top-0 z-40 fixed w-screen h-16 hover:bg-gray-200/50 hover:dark:bg-gray-800/60 border-b-[0.5px] border-gray-300 dark:border-gray-800 flex justify-center duration-300"> {/* base of navbar */}
+    <nav className="transition-all backdrop-blur top-0 z-40 fixed w-screen h-16 hover:dark:shadow-gray-800/60 hover:bg-gray-300/50 hover:shadow-2xl hover:shadow-gray-300/50 hover:dark:bg-gray-800/60 border-b-[0.5px] border-gray-300 dark:border-gray-800 flex justify-center duration-300"> {/* base of navbar */}
       <div className="max-w-7xl hidden lg:visible lg:flex w-4/5 mx-auto justify-between items-center"> {/* navbar container */}
         <div className="flex justify-start space-x-4 py-3 items-center">
           {Pages.map((page) => (

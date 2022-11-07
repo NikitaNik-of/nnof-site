@@ -6,6 +6,8 @@ import LinkButton from "../components/UI/LinkButton";
 import links from "../api/links.json"
 import TitleHead from "../components/TitleHead";
 import LinkBlock from "../components/LinkBlock";
+import ytl from "../public/images/logos/yt_profile.jpg"
+import ytl2 from "../public/images/logos/yt2_profile.png"
 
 export default function Links() {
     const [linkBtn, setLink] = useState(links.linkBtn)
@@ -26,7 +28,8 @@ export default function Links() {
                 ))}
             </div>
         </Layout>
-        <LinkBlock/>
+        <LinkBlock playlistID="UUamczE3xY8f_UcF4ItttVgA" pic={ytl} channelID="@NikitaNik_of" body="Самая главная часть контента"/>
+        <LinkBlock playlistID="UUcaSqrqIfplYngOKW3MLANA" pic={ytl2} channelID="@NikitaNik_not_of" body="Клипы почти на каждый день"/>
     </div>
     )
 }

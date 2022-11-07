@@ -30,7 +30,7 @@ export default function Home() {
       </Head>
       <NavBar/>
       <FadeIn pauseFor={1000} className="absolute z-10 h-screen w-screen flex flex-col justify-center">
-        <div className="flex justify-center pb-32 pl-64">
+        <div className="flex justify-center lg:pb-32 lg:pl-64">
           <Image src={themePick()} height={800} width={800} unoptimized className=""/>
         </div>
       </FadeIn>
