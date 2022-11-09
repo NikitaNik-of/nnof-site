@@ -9,11 +9,12 @@ const ThemeChng = () => {
   const [mounted, setMounted] = useState(false);
   
   const iconPlacer = () => {
+    let cl = ' h-6 w-6 m-1 transition-all'
     if (theme == 'light') {
-      return(<MoonIcon className="text-black h-6 w-6 m-1 "/>)
+      return(<MoonIcon className={cl}/>)
     }
     else{
-      return(<SunIcon className="text-white h-6 w-6 m-1 "/>)
+      return(<SunIcon className={cl}/>)
     }
   }
 
@@ -27,7 +28,7 @@ const ThemeChng = () => {
   }
 
   return (
-      <button className= 'p-1 aspect-square bg-transparent border-2 border-gray-500/5 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-2xl transition-colors box-content align-middle text-center' onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
+      <button className= ' p-1 aspect-square bg-transparent border-2 border-gray-500/5 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-2xl transition-colors box-content align-middle text-center' onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
         {iconPlacer()}
       </button>
   )

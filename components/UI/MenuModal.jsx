@@ -31,6 +31,9 @@ const MenuModal = ({isVisible}) => {
       case 'link':
         return(<LinkIcon className='text-black dark:text-white h-6 w-6 mr-3 '/>)
       
+      case 'rules':
+        return(<InformationCircleIcon className='text-black dark:text-white h-6 w-6 mr-3' />)
+
       case 'test':
         return(<CubeTransparentIcon className='text-black dark:text-white h-6 w-6 mr-3 '/>)
   
@@ -43,7 +46,7 @@ const MenuModal = ({isVisible}) => {
     <div className={setVis() + '  transition-all fixed z-50 inset-0 backdrop-blur-sm bg-slate-300/60 dark:bg-slate-700/60 overflow-y-auto min-h-screen min-w-full flex flex-col pt-16 py-4 px-6'}>
       {Pages.map((page) => (
         <Link key={page.id} href={page.address} passHref>
-          <MainButton className='text-left flex justify-start items-center'>
+          <MainButton className='text-left w-full justify-start items-center'>
             {setIcon(page.icon)}
             {page.name}
           </MainButton>

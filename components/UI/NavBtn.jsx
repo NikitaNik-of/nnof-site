@@ -5,7 +5,7 @@ const NavBtn = ({ curPage, pageLink, children, ...props }) => {
         if (cur == pLink) {
             return 'bg-teal-200 border-teal-300 hover:bg-teal-100 hover:border-teal-400 dark:hover:bg-teal-800 dark:bg-teal-900 dark:border-teal-700'
         } else {
-            return 'bg-transparent border-transparent hover:bg-gray-200 dark:hover:bg-gray-800'
+            return 'bg-transparent border-transparent hover:bg-gray-300 dark:hover:bg-gray-700'
         }
     }
 

@@ -1,11 +1,11 @@
 {
     "linkBtn" : [
-        {"id": 0, "name": "GitHub", "classBtn": "border-gray-600 dark:border-gray-400 hover:bg-[#e3e3e3] bg-[#cdcdcd] dark:bg-[#272727] hover:dark:bg-[#3d3d3d] ", "href": "https://github.com/NikitaNik-of"},
-        {"id": 1, "name": "VK", "classBtn": "border-[#0077FF] hover:bg-[#b9daff] bg-[#8bc1ff] dark:bg-[#002046] hover:dark:bg-[#003674] ", "href": "https://vk.com/nikitanik__of"},
-        {"id": 2, "name": "Discord", "classBtn": "border-[#5865F2] hover:bg-[#d0d3fb] bg-[#b0b6f9] dark:bg-[#060c4f] hover:dark:bg-[#0b168e] ", "href": "https://discord.gg/w6DPjncAMb "},
-        {"id": 3, "name": "Twitch", "classBtn": "border-[#9146FF] hover:bg-[#dec8ff] bg-[#c9a4ff] dark:bg-[#25005b] hover:dark:bg-[#4800b3] ", "href": "https://www.twitch.tv/nikitanik_of/"},
-        {"id": 4, "name": "Youtube", "classBtn": "border-[#ff0000] hover:bg-[#ffbcbc] bg-[#ffa1a1] dark:bg-[#400000] hover:dark:bg-[#7f0000]", "href": "https://www.youtube.com/channel/UCamczE3xY8f_UcF4ItttVgA"},
-        {"id": 5, "name": "Telegram", "classBtn": "border-[#0088cc] hover:bg-[#bce9ff] bg-[#86d7ff] dark:bg-[#002d43] hover:dark:bg-[#003f5e]", "href": "https://t.me/nikitanikof"},
-        {"id": 6, "name": "Boosty", "classBtn": "border-[#ff6600] hover:bg-[#ffd1b3] bg-[#ffb380] dark:bg-[#4d1f00] hover:dark:bg-[#803300] ", "href": "https://boosty.to/nikitanik_of"}
+        {"id": 0, "name": "GitHub", "classBtn": "hover:shadow-gray-500/50 border-gray-600 dark:border-gray-400 hover:bg-[#e3e3e3] bg-[#cdcdcd] dark:bg-[#272727] hover:dark:bg-[#3d3d3d] ", "href": "https://github.com/NikitaNik-of"},
+        {"id": 1, "name": "VK", "classBtn": "hover:shadow-[#0077FF]/50 border-[#0077FF] hover:bg-[#b9daff] bg-[#8bc1ff] dark:bg-[#002046] hover:dark:bg-[#003674] ", "href": "https://vk.com/nikitanik__of"},
+        {"id": 2, "name": "Telegram", "classBtn": "hover:shadow-[#0088cc]/50 border-[#0088cc] hover:bg-[#bce9ff] bg-[#86d7ff] dark:bg-[#002d43] hover:dark:bg-[#003f5e]", "href": "https://t.me/nikitanikof"},
+        {"id": 3, "name": "Youtube", "classBtn": "hover:shadow-[#ff0000]/50 border-[#ff0000] hover:bg-[#ffbcbc] bg-[#ffa1a1] dark:bg-[#400000] hover:dark:bg-[#7f0000]", "href": "https://www.youtube.com/channel/UCamczE3xY8f_UcF4ItttVgA"},
+        {"id": 4, "name": "Twitch", "classBtn": "hover:shadow-[#9146FF]/50 border-[#9146FF] hover:bg-[#dec8ff] bg-[#c9a4ff] dark:bg-[#25005b] hover:dark:bg-[#4800b3] ", "href": "https://www.twitch.tv/nikitanik_of/"},
+        {"id": 5, "name": "Discord", "classBtn": "hover:shadow-[#5865F2]/50 border-[#5865F2] hover:bg-[#d0d3fb] bg-[#b0b6f9] dark:bg-[#060c4f] hover:dark:bg-[#0b168e] ", "href": "https://discord.gg/w6DPjncAMb "},
+        {"id": 6, "name": "Boosty", "classBtn": "hover:shadow-[#ff6600]/50 border-[#ff6600] hover:bg-[#ffd1b3] bg-[#ffb380] dark:bg-[#4d1f00] hover:dark:bg-[#803300] ", "href": "https://boosty.to/nikitanik_of"}
     ]
 }

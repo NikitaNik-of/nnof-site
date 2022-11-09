@@ -1,10 +1,9 @@
 import React from 'react'
-import cl from './Layout.module.css'
 
 const Layout = ({children, className}) => {
   return (
       <div className={className +' transition-colors'}>
-        <div className='max-w-7xl px-2 w-full lg:w-4/5 lg:mx-auto'>
+        <div className='max-w-7xl px-2 w-11/12 lg:w-4/5 mx-auto'>
           {children}  
         </div>
       </div>
