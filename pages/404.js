@@ -11,7 +11,7 @@ import iconScull from '../public/images/skull.webp';
 import iconTeeth from '../public/images/teeth.webp'
 
 export default function NotFound() {
-  const [motd, setMotd] = useState({source: {iconMono}, title: '', subtitle: '', cl: ''})
+  const [motd, setMotd] = useState({source: iconMono, title: '', subtitle: '', cl: ''})
 
 
   const setMessage = (min, max) => {
