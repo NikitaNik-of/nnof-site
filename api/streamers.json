@@ -49,7 +49,7 @@
       "hover": "hover:shadow-rose-500/60 hover:dark:shadow-rose-800/50"
     }
   ],
-  "curMarathon": 5,
+  "curMarathon": 4,
   "marathons": [
     {
       "id": 4,
@@ -62,7 +62,7 @@
       "id": 5,
       "streamCount": 5,
       "streamersID": [2, 4, 1, 5, 6],
-      "date": "2022-11-12 ",
+      "date": "2022-11-19 ",
       "times": ["15:30", "17:00", "18:30", "20:00", "21:30", "23:00"]
     }
   ]
