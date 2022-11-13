@@ -10,6 +10,12 @@ const nextConfig = {
         port: '**',
         pathname: '/vi/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'api.mineatar.io',
+        port: '**',
+        pathname: '/body/full/**',
+      },
     ],
   },
 }

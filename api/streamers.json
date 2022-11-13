@@ -1,0 +1,69 @@
+{
+  "profiles": [
+    {
+      "id": 1,
+      "name": "/NikitaNik_of",
+      "MCName": "NikitaNik_of",
+      "color": "from-cyan-900/20 via-cyan-700/60 to-cyan-900/20",
+      "mainColor": "bg-cyan-900/20",
+      "hover": "hover:shadow-cyan-500/60 hover:dark:shadow-cyan-800/50"
+    },
+    {
+      "id": 2,
+      "name": "/Pe3epWithYou",
+      "MCName": "Pe3eP",
+      "color": "from-red-900/20 via-red-700/60 to-red-900/20",
+      "mainColor": "bg-red-900/20",
+      "hover": "hover:shadow-red-500/60 hover:dark:shadow-red-800/50"
+    },
+    {
+      "id": 3,
+      "name": "/LoloGoood",
+      "MCName": "MrLoloGood",
+      "color": "from-lime-900/20 via-lime-700/60 to-lime-900/20",
+      "mainColor": "bg-lime-900/20",
+      "hover": "hover:shadow-lime-500/60 hover:dark:shadow-lime-800/50"
+    },
+    {
+      "id": 4,
+      "name": "/Maestro_playa",
+      "MCName": "maestro_playa",
+      "color": "from-violet-900/20 via-violet-700/60 to-violet-900/20",
+      "mainColor": "bg-violet-900/20",
+      "hover": "hover:shadow-violet-500/60 hover:dark:shadow-violet-800/50"
+    },
+    {
+      "id": 5,
+      "name": "/DizWasTaken",
+      "MCName": "DizWasTaken",
+      "color": "from-yellow-500/60 via-yellow-800/50 to-yellow-500/60 dark:from-yellow-500/10 dark:via-yellow-300/60 dark:to-yellow-500/10",
+      "mainColor": "bg-yellow-400/20 dark:bg-yellow-500/10",
+      "hover": "hover:shadow-yellow-700/60 hover:dark:shadow-yellow-800/50"
+    },
+    {
+      "id": 6,
+      "name": "/midan404",
+      "MCName": "midan404",
+      "color": "from-rose-900/20 via-rose-700/60 to-rose-900/20",
+      "mainColor": "bg-rose-900/30",
+      "hover": "hover:shadow-rose-500/60 hover:dark:shadow-rose-800/50"
+    }
+  ],
+  "curMarathon": 5,
+  "marathons": [
+    {
+      "id": 4,
+      "streamCount": 4,
+      "streamersID": [2, 1, 3, 4],
+      "date": "2022-11-12 ",
+      "times": ["15:30", "17:00", "18:30", "20:00", "21:30"]
+    },
+    {
+      "id": 5,
+      "streamCount": 5,
+      "streamersID": [2, 4, 1, 5, 6],
+      "date": "2022-11-12 ",
+      "times": ["15:30", "17:00", "18:30", "20:00", "21:30", "23:00"]
+    }
+  ]
+}
