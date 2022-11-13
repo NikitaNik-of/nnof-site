@@ -22,7 +22,7 @@ export default function Marathon() {
         </Layout>
         <div className='flex justify-center p-4 flex-wrap lg:mx-8'>
             {maraInfo.marathons[curMara].streamersID.map((streamer, key) => (
-                <StreamerCard streamerInfo={maraInfo.profiles[streamer - 1]} times={[maraInfo.marathons[curMara].times[key], maraInfo.marathons[curMara].times[key + 1]]}/>
+                <StreamerCard key={key} streamerInfo={maraInfo.profiles[streamer - 1]} times={[maraInfo.marathons[curMara].times[key], maraInfo.marathons[curMara].times[key + 1]]}/>
             ))}
         </div>
     </div>
