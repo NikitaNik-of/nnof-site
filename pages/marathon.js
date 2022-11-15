@@ -40,9 +40,10 @@ export default function Marathon() {
     <div className=" font-igraSans">
       <NavBar className="z-40"/>
       {mounted
-      ?<div>
-        <DuringMara isBefore={state} maraInfo={maraInfo}/>
-        <BeforeMara isBefore={state} maraInfo={maraInfo} isTimer=""/>
+      ?<div>{
+        (state[0] == 1)
+        ?<DuringMara isBefore={state} maraInfo={maraInfo}/>
+        :<BeforeMara isBefore={state} maraInfo={maraInfo} isTimer=""/>}
       </div>
       :<div> Loadink... </div>
       }
