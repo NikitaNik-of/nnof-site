@@ -26,8 +26,8 @@ export default function Marathon() {
           diffs.push()
       }
       setMounted(true)
-      if (k == 0) return [0, NaN]
-      else if (k > marInf.streamCount) return [2, NaN]
+      if (k == 0) return [0, 1]
+      else if (k > marInf.streamCount) return [2, 1]
       else return [1, k]
     } 
 
