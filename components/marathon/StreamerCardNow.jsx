@@ -11,7 +11,10 @@ const StreamerCardNow = ({ streamerInfo, times, className }) => {
   };
 
   return (
-      <div className={className +" flex flex-row items-start min-w-[90%] md:min-w-0 my-4 md:justify-center bg-gray-200/50 dark:bg-gray-800/80 p-4 sm:p-6 rounded-lg m-2 mx-4 hover:-translate-y-1 hover:scale-[1.01] transition-all hover:bg-gray-300 hover:dark:bg-gray-700/50 hover:shadow-2xl " + streamerInfo.hover}>
+      <div className={className +" relative flex flex-row items-start min-w-[90%] md:min-w-0 my-4 md:justify-center bg-gray-200/50 dark:bg-gray-800/80 p-4 sm:p-6 rounded-lg m-2 mx-4 hover:-translate-y-1 hover:scale-[1.01] transition-all hover:bg-gray-300 hover:dark:bg-gray-700/50 hover:shadow-2xl " + streamerInfo.hover}>
+        <div className="absolute -bottom-px -right-px py-1 px-3 bg-violet-600 rounded-br-lg rounded-tl-lg">
+          LIVE
+        </div>
         <div className={"w-20 md:w-32 lg:w-40 p-px bg-gradient-to-bl rounded-lg " + streamerInfo.color}>
           <div className="bg-gray-200 dark:bg-gray-900 rounded-lg">
             <div className={"rounded-lg p-2 md:p-4 lg:p-6 " + streamerInfo.mainColor}>
