@@ -6,27 +6,34 @@ import LinkButton from "../components/UI/LinkButton";
 import links from "../api/links.json"
 import BeforeMara from '../components/marathon/BeforeMara';
 import maraInfo from "../api/streamers.json"
+import DuringMara from '../components/marathon/DuringMara';
 
 export default function Marathon() {
     const [linkBtn, setLink] = useState(links.linkBtn)
 
     const stateMar = () => {
         // 0=before, 1=playing, 2=after
+        let marInf = maraInfo.marathons[maraInfo.curMarathon - 4]
         let now = new Date()
-        let start = new Date(maraInfo.marathons[maraInfo.curMarathon - 4].date + maraInfo.marathons[maraInfo.curMarathon - 4].times[0])
-        let end = new Date(maraInfo.marathons[maraInfo.curMarathon - 4].date + maraInfo.marathons[maraInfo.curMarathon - 4].times[maraInfo.marathons[maraInfo.curMarathon - 4].streamCount - 1])
-        let diffStart = start.getTime() - now.getTime()
-        let diffEnd = end.getTime() - now.getTime()
-        console.log(start.getTime(), diffStart)
-        console.log(end.getTime(), diffEnd)
-        if (diffStart > 0) return 0
-        else if (diffEnd > 0) return 1
-        else return 2
+        let diffs = []
+        let k = 0
+        for (let i = 0; i <= marInf.streamCount; i++) {
+            let time = new Date(marInf.date + marInf.times[i])
+            let dif = time.getTime() - now.getTime()
+            if (dif < 0) k++
+            diffs.push()
+        }
+        console.log(k)
+        if (k == 0) return [0, NaN]
+        else if (k > marInf.streamCount) return [2, NaN]
+        else return [1, k]
     } 
 
     return(
     <div className=" font-igraSans">
-        <NavBar/>
+        <NavBar className="z-40"/>
+        {console.log(stateMar())}
+        <DuringMara isBefore={stateMar()} maraInfo={maraInfo}/>
         <BeforeMara isBefore={stateMar()} maraInfo={maraInfo} isTimer=""/>
     </div>
     )
