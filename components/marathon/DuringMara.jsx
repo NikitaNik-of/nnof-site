@@ -45,7 +45,7 @@ const DuringMara = ({ maraInfo, isBefore = [0, 1] }) => {
         </div>
         <StreamerCardNow
           streamerInfo={maraInfo.profiles[curStreamer]}
-          className = "skew-y-3 border-violet-600 border"
+          className = "skew-y-3 border "
           times={[
             maraInfo.marathons[curMara].times[isBefore[1] - 1],
             maraInfo.marathons[curMara].times[isBefore[1]],
