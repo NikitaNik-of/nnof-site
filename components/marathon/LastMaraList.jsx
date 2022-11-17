@@ -18,7 +18,7 @@ const LastMaraList = ({ streamers, marathons, curMar }) => {
           {marathons.map((mar, key) => (key < curMar
             ? <div className="bg-gray-700/30 px-3 pb-3 my-2 md:m-2 rounded-3xl overflow-hidden">
                 <div className="my-3 text-base md:text-xl">{"Анонс эстафеты #" + (curMar - key)}</div>
-                <Image className=" rounded-3xl" src={maraPics[curMar - key - 1]} unoptimized/>
+                <Image className=" rounded-xl" src={maraPics[curMar - key - 1]} unoptimized/>
               </div>
             : null))}
         </div>
