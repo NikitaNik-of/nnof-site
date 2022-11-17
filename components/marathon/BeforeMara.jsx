@@ -8,7 +8,7 @@ import offline from "../../public/images/OFFLINECHAT.png"
 import Image from "next/image";
 
 const BeforeMara = ({ maraInfo, isBefore = [0, 0] }) => {
-  const [curMara, setCurMara] = useState(maraInfo.curMarathon - 4);
+  const [curMara, setCurMara] = useState(maraInfo.curMarathon - 1);
   return (
     <div className={(isBefore[0] == 1) ? "hidden" : "visible"}>
       <Layout className="mt-16">

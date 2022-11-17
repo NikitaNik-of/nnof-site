@@ -7,6 +7,8 @@ import links from "../api/links.json"
 import BeforeMara from '../components/marathon/BeforeMara';
 import maraInfo from "../api/streamers.json"
 import DuringMara from '../components/marathon/DuringMara';
+import TitleHead from '../components/TitleHead';
+import LastMaraList from '../components/marathon/LastMaraList';
 
 export default function Marathon() {
     const [linkBtn, setLink] = useState(links.linkBtn)
@@ -15,7 +17,7 @@ export default function Marathon() {
 
     const stateMar = () => {
       // 0=before, 1=playing, 2=after
-      let marInf = maraInfo.marathons[maraInfo.curMarathon - 4]
+      let marInf = maraInfo.marathons[maraInfo.curMarathon - 1]
       let now = new Date()
       let diffs = []
       let k = 0
@@ -45,9 +47,20 @@ export default function Marathon() {
         ?<DuringMara isBefore={state} maraInfo={maraInfo}/>
         :<BeforeMara isBefore={state} maraInfo={maraInfo} isTimer=""/>}
       </div>
-      :<div> Loadink... </div>
+      :
+      <Layout className="mt-16">
+        <Head>
+          <title>Эстафета стримеров</title>
+        </Head>
+        <TitleHead
+          imgName="camera"
+          title="Эстафета стримеров"
+          subtitle="Генератор часов контента для зрителей"
+          hidtitle='"А кому мне рейд кидать?" - кто-то из участников эстафеты'
+        />
+      </Layout>
       }
-
+      <LastMaraList streamers={maraInfo.profiles} marathons={maraInfo.marathons} curMar={maraInfo.curMarathon - 1}/>
     </div>
     )
 }

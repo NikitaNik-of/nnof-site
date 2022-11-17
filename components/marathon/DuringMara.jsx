@@ -9,7 +9,7 @@ import pointDown from "../../public/images/pointDown.png"
 import Image from "next/image";
 
 const DuringMara = ({ maraInfo, isBefore = [0, 1] }) => {
-  const [curMara, setCurMara] = useState(maraInfo.curMarathon - 4);
+  const [curMara, setCurMara] = useState(maraInfo.curMarathon - 1);
   const [curStreamer, setCurStreamer] = useState(
     maraInfo.marathons[curMara].streamersID[isBefore[1] - 1] - 1
   );
