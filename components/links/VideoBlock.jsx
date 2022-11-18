@@ -55,7 +55,7 @@ const VideoBlock = ( {video, id, ...props} ) => {
   return (
     <a href={'https://www.youtube.com/watch?v=' + video.resourceId.videoId} className={dateTrim(video.publishedAt, 1) + coloring(id) + 'ring-offset-transparent ring-offset-0 relative w-auto h-auto rounded-lg bg-gray-100 dark:bg-gray-700/50 hover:-translate-y-1 hover:scale-[1.01] transition-all hover:bg-gray-200 hover:dark:bg-gray-600/50 hover:shadow-xl'}>
         <div className={coloring(id, 1) + dateTrim(video.publishedAt, 2) + ' -top-[1px] -right-[1px] absolute text-[14px] lg:text-sm py-1 px-2 rounded-tr-lg rounded-bl-lg'}>НОВЫЙ</div>
-        <Image alt="" className='rounded-lg' loader={ytLoader} src={video.resourceId.videoId} width={1280} height={720}/>
+        <Image onBlur={true} alt="" className='rounded-lg' loader={ytLoader} src={video.resourceId.videoId} width={1280} height={720}/>
         <div className='m-3 px-2 text-[14px] lg:text-sm mb-4 pb-2 flex flex-col justify-between'>
           <div className=''>{video.title}</div>
           <div className='text-gray-600 mt-2 '>{dateTrim(video.publishedAt)}</div>

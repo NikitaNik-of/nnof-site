@@ -14,9 +14,11 @@
     "konva": "^8.3.13",
     "next": "^13.0.2",
     "next-themes": "^0.2.1",
+    "nprogress": "^0.2.0",
     "react": "^18.2.0",
     "react-dom": "18.2.0",
     "react-konva": "^18.2.3",
+    "react-player": "^2.11.0",
     "youtube-api": "^3.0.1",
     "youtube-channel-videos": "^1.0.0"
   },

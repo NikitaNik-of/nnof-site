@@ -11,7 +11,7 @@ const MainButton = ({disabled, children, type = 'default', className, ...props})
 
   return (
     <button {...props} className={coloring(type, disabled) + ' rounded-lg border-2 text-[14px] lg:text-base m-1 py-2 px-3 lg:px-5 transition-all -skew-x-6 ' + className}>
-        <div className='skew-x-6 flex flex-row'>
+        <div className='skew-x-6 flex flex-row items-center'>
           {children}
         </div>
     </button>

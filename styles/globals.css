@@ -34,6 +34,8 @@ html {
     box-sizing: border-box;
 }
 
+
+
 .slide-top {
 	animation: slide-top 0.6s cubic-bezier(0.950, 0.050, 0.795, 0.035) both;
 }

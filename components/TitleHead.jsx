@@ -3,6 +3,7 @@ import SlideUp from './UI/SlideUp'
 import Image from 'next/image'
 import link from '../public/images/linkicon.webp'
 import traficLight from '../public/images/traficLights.png'
+import camera from '../public/images/camera.png'
 
 const TitleHead = ({title, subtitle, hidtitle, imgName, ...props}) => {
   function src(imgName) {
@@ -12,6 +13,9 @@ const TitleHead = ({title, subtitle, hidtitle, imgName, ...props}) => {
     
       case 'trafic':
         return(traficLight)
+        
+      case 'camera':
+        return(camera)
     
       default:
         return(link)
