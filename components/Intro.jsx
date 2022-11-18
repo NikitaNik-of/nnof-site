@@ -21,6 +21,9 @@ const Intro = () => {
           мой сайт!
         </SlideUp>
       </div>
+      <SlideUp pauseFor={1500} className="mt-1 text-base text-gray-600 dark:text-gray-600">
+        Начни свой путь с кнопок наверху
+      </SlideUp>
     </div>
   )
 }

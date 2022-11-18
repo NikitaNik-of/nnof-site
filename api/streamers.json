@@ -61,7 +61,7 @@
       "hover": "hover:shadow-rose-500/60 hover:dark:shadow-rose-800/50"
     }
   ],
-  "curMarathon": 4,
+  "curMarathon": 5,
   "marathons": [
     {
       "id": 1,
@@ -97,11 +97,19 @@
     },
     {
       "id": 5,
-      "streamCount": 5,
-      "streamersID": [2, 4, 1, 5, 6],
+      "streamCount": 4,
+      "streamersID": [2, 3, 1, 4],
       "date": "2022/11/19 ",
       "dateStr": "19 ноября",
-      "times": ["15:30", "17:00", "18:30", "20:00", "21:30", "23:00"]
+      "times": ["14:00", "15:30", "17:00", "19:00", "20:30"]
+    },
+    {
+      "id": 6,
+      "streamCount": 4,
+      "streamersID": [2, 3, 1, 4],
+      "date": "2022/11/26 ",
+      "dateStr": "26 ноября",
+      "times": ["14:00", "15:30", "17:00", "19:00", "20:30"]
     }
   ]
 }
