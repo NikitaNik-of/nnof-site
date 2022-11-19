@@ -1,0 +1,115 @@
+{
+  "profiles": [
+    {
+      "id": 1,
+      "name": "/NikitaNik_of",
+      "MCName": "NikitaNik_of",
+      "color": "from-cyan-900/20 via-cyan-700/60 to-cyan-900/20",
+      "mainColor": "bg-cyan-900/20",
+      "cornerColor": "bg-cyan-600",
+      "borderColor": "border-cyan-600",
+      "hover": "hover:shadow-cyan-500/60 hover:dark:shadow-cyan-800/50"
+    },
+    {
+      "id": 2,
+      "name": "/Pe3epWithYou",
+      "MCName": "Pe3eP",
+      "color": "from-red-900/20 via-red-700/60 to-red-900/20",
+      "mainColor": "bg-red-900/20",
+      "cornerColor": "bg-red-600",
+      "borderColor": "border-red-600",
+      "hover": "hover:shadow-red-500/60 hover:dark:shadow-red-800/50"
+    },
+    {
+      "id": 3,
+      "name": "/LoloGoood",
+      "MCName": "MrLoloGood",
+      "color": "from-lime-900/20 via-lime-700/60 to-lime-900/20",
+      "mainColor": "bg-lime-900/20",
+      "cornerColor": "bg-lime-600",
+      "borderColor": "border-lime-600",
+      "hover": "hover:shadow-lime-500/60 hover:dark:shadow-lime-800/50"
+    },
+    {
+      "id": 4,
+      "name": "/Maestro_playa",
+      "MCName": "maestro_playa",
+      "color": "from-violet-900/20 via-violet-700/60 to-violet-900/20",
+      "mainColor": "bg-violet-900/20",
+      "cornerColor": "bg-violet-600",
+      "borderColor": "border-violet-600",
+      "hover": "hover:shadow-violet-500/60 hover:dark:shadow-violet-800/50"
+    },
+    {
+      "id": 5,
+      "name": "/DizWasTaken",
+      "MCName": "DizWasTaken",
+      "color": "from-yellow-500/60 via-yellow-800/50 to-yellow-500/60 dark:from-yellow-500/10 dark:via-yellow-300/60 dark:to-yellow-500/10",
+      "mainColor": "bg-yellow-400/20 dark:bg-yellow-500/10",
+      "cornerColor": "bg-yellow-600",
+      "borderColor": "border-yellow-600",
+      "hover": "hover:shadow-yellow-700/60 hover:dark:shadow-yellow-800/50"
+    },
+    {
+      "id": 6,
+      "name": "/midan404",
+      "MCName": "midan404",
+      "color": "from-rose-900/20 via-rose-700/60 to-rose-900/20",
+      "mainColor": "bg-rose-900/30",
+      "cornerColor": "bg-rose-600",
+      "borderColor": "border-rose-600",
+      "hover": "hover:shadow-rose-500/60 hover:dark:shadow-rose-800/50"
+    }
+  ],
+  "curMarathon": 5,
+  "marathons": [
+    {
+      "id": 1,
+      "streamCount": 3,
+      "streamersID": [3, 2, 1],
+      "date": "2022/10/16 ",
+      "dateStr": "16 октября",
+      "times": ["14:00", "16:00", "18:00", "20:00"]
+    },
+    {
+      "id": 2,
+      "streamCount": 3,
+      "streamersID": [2, 3, 1],
+      "date": "2022/10/22 ",
+      "dateStr": "22 октября",
+      "times": ["14:00", "16:00", "18:00", "20:00"]
+    },
+    {
+      "id": 3,
+      "streamCount": 5,
+      "streamersID": [6, 1, 4, 3, 5],
+      "date": "2022/11/05 ",
+      "dateStr": "5 ноября",
+      "times": ["13:30", "15:30", "18:00", "20:00", "22:00", "23:59"]
+    },
+    {
+      "id": 4,
+      "streamCount": 4,
+      "streamersID": [2, 1, 3, 4],
+      "date": "2022/11/12 ",
+      "dateStr": "12 ноября",
+      "times": ["15:30", "17:00", "18:30", "20:00", "21:30"]
+    },
+    {
+      "id": 5,
+      "streamCount": 4,
+      "streamersID": [2, 3, 1, 4],
+      "date": "2022/11/19 ",
+      "dateStr": "19 ноября",
+      "times": ["14:00", "15:30", "17:00", "19:00", "20:30"]
+    },
+    {
+      "id": 6,
+      "streamCount": 4,
+      "streamersID": [2, 3, 1, 4],
+      "date": "2022/11/26 ",
+      "dateStr": "26 ноября",
+      "times": ["14:30", "15:30", "17:00", "19:00", "20:30"]
+    }
+  ]
+}
