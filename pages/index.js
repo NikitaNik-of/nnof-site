@@ -36,6 +36,7 @@ export default function Home() {
       </FadeIn>
       <Intro/>
       <Layout/>
+      <div className='opacity-0 lg:opacity-10 absolute bottom-2 right-2'>Made by NikitaNik, ver. 0.4.1</div>
     </div>
   );
 }
