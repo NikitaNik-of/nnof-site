@@ -5,6 +5,7 @@ import mPic1 from "../../public/images/marathons/mara1.png"
 import mPic2 from "../../public/images/marathons/mara2.png"
 import mPic3 from "../../public/images/marathons/mara3.png"
 import mPic4 from "../../public/images/marathons/mara4.png"
+import mPic5 from "../../public/images/marathons/mara5.png"
 import Image from "next/image";
 import LinkButton from "../UI/LinkButton";
 import links from "../../api/links.json"
@@ -12,7 +13,7 @@ import MainButton from "../UI/MainButton";
 import Link from "next/link";
 
 const LastMaraList = ({ streamers, marathons, curMar }) => {
-  const [maraPics, setMaraPics] = useState([mPic1, mPic2, mPic3, mPic4])
+  const [maraPics, setMaraPics] = useState([mPic1, mPic2, mPic3, mPic4, mPic5])
 
   return (
     <div className="bg-gray-300/50 dark:bg-gray-800/50 my-16 -skew-y-3 py-4 md:p-4 text-center">
@@ -30,7 +31,7 @@ const LastMaraList = ({ streamers, marathons, curMar }) => {
           {marathons.map((mar, key) => (key < curMar
             ? <div className="bg-gray-400/20 dark:bg-gray-700/30 px-3 pb-3 my-2 md:m-2 rounded-3xl overflow-hidden">
                 <div className="mt-3 text-base md:text-xl">{"Анонс эстафеты #" + (curMar - key)}</div>
-                <div className="mb-3 text-sm md:text-base text-gray-600 dark:text-gray-500">{mar.dateStr}</div>
+                <div className="mb-3 text-sm md:text-base text-gray-600 dark:text-gray-500">{marathons[curMar - key - 1].dateStr}</div>
                 <Image className=" rounded-xl" src={maraPics[curMar - key - 1]} unoptimized/>
               </div>
             : null))}
