@@ -29,7 +29,7 @@ const LastMaraList = ({ marathons, curMar }) => {
       <Layout className="mt-5">
         <div className=" grid grid-cols-1 md:grid-cols-2 skew-y-3">
           {marathons.map((mar, key) => (key < curMar
-            ? <div className="bg-gray-400/20 dark:bg-gray-700/30 px-3 pb-3 my-2 md:m-2 rounded-3xl overflow-hidden">
+            ? <div key={key} className="bg-gray-400/20 dark:bg-gray-700/30 px-3 pb-3 my-2 md:m-2 rounded-3xl overflow-hidden">
                 <div className="mt-3 text-base md:text-xl">{"Анонс эстафеты #" + (curMar - key)}</div>
                 <div className="mb-3 text-sm md:text-base text-gray-600 dark:text-gray-500">{marathons[curMar - key - 1].dateStr}</div>
                 <Image className=" rounded-xl" src={maraPics[curMar - key - 1]} unoptimized/>

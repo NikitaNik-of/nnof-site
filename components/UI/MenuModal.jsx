@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { Transition, Dialog } from "@headlessui/react";
 import { HomeIcon, InformationCircleIcon, CubeTransparentIcon, LinkIcon, VideoCameraIcon } from '@heroicons/react/24/outline'
 import { Fragment } from 'react'
+import settings from "../../api/settings.json"
 
 
 const MenuModal = ({isVisible, setIsVisible}) => {
@@ -75,7 +76,7 @@ const MenuModal = ({isVisible, setIsVisible}) => {
                   ))}
               </Dialog.Panel>
             </Transition.Child>
-            <div className='absolute bottom-2 right-2 opacity-10'>Made by NikitaNik, ver. 0.4.2-dev</div>
+            <div className='absolute bottom-2 right-2 opacity-10'>{"Made by NikitaNik, ver. " + settings.version}</div>
           </div>
         </Transition.Child>
       </Dialog>

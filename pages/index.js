@@ -7,6 +7,7 @@ import bgDark from "../public/images/bgDark.png"
 import bgLight from "../public/images/bgLight.png"
 import FadeIn from "../components/animated/FadeIn";
 import { useTheme } from "next-themes";
+import settings from "../api/settings.json"
 
 export default function Home() {
 
@@ -18,6 +19,7 @@ export default function Home() {
       return(bgDark)
     }
   }
+  
 
   return (
     <div className="font-igraSans">
@@ -25,14 +27,14 @@ export default function Home() {
         <title>Главная страница</title>
       </Head>
       <NavBar/>
-      <FadeIn pauseFor={1000} className="absolute z-10 h-screen w-screen flex flex-col justify-center">
+      <FadeIn pauseFor={1000} className="absolute z-0 h-screen w-screen flex flex-col justify-center">
         <div className="flex justify-center lg:pb-32 lg:pl-64">
-          <Image alt="" src={themePick()} height={800} width={800} unoptimized className="z-10 "/>
+          <Image alt="" src={themePick()} height={800} width={800}  className="-z-20 blur-lg "/>
         </div>
       </FadeIn>
       <Intro/>
       <Layout/>
-      <div className='opacity-0 lg:opacity-10 absolute bottom-2 right-2'>Made by NikitaNik, ver. 0.4.2-dev</div>
+      <div className='opacity-0 lg:opacity-10 absolute bottom-2 right-2'>{"Made by NikitaNik, ver. " + settings.version}</div>
     </div>
   );
 }
