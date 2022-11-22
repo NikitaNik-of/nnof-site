@@ -1,11 +1,7 @@
-import Link from "next/link";
 import Head from "next/head";
 import Layout from "../components/Layout";
 import Image from 'next/image'
 import NavBar from "../components/NavBar";
-import MainButton from "../components/UI/MainButton";
-import { useEffect, useState } from "react";
-import SlideUp from "../components/UI/SlideUp";
 import Intro from "../components/Intro";
 import bgDark from "../public/images/bgDark.png"
 import bgLight from "../public/images/bgLight.png"
@@ -36,7 +32,7 @@ export default function Home() {
       </FadeIn>
       <Intro/>
       <Layout/>
-      <div className='opacity-0 lg:opacity-10 absolute bottom-2 right-2'>Made by NikitaNik, ver. 0.4.1</div>
+      <div className='opacity-0 lg:opacity-10 absolute bottom-2 right-2'>Made by NikitaNik, ver. 0.4.2-dev</div>
     </div>
   );
 }

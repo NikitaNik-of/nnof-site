@@ -60,7 +60,7 @@ export default function Marathon() {
         />
       </Layout>
       }
-      <LastMaraList streamers={maraInfo.profiles} marathons={maraInfo.marathons} curMar={maraInfo.curMarathon - 1}/>
+      <LastMaraList marathons={maraInfo.marathons} curMar={maraInfo.curMarathon - 1}/>
     </div>
     )
 }

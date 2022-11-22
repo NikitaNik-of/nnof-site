@@ -1,8 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React, { useState, useTransition } from "react";
+import React, { useState } from "react";
 import ThemeChng from "./ThemeChng";
-import MainButton from "./UI/MainButton";
 import NavBtn from "./UI/NavBtn";
 import { Bars3Icon } from "@heroicons/react/24/outline"
 import MenuModal from "./UI/MenuModal";
@@ -34,7 +33,7 @@ const NavBar = () => {
         <div className=" flex items-center m-0 p-2">
           <button onClick={() => (mobMenu) ? setMobMenu(false) : setMobMenu(true) } className='bg-transparent hover:bg-gray-200 dark:hover:bg-gray-800 aspect-square rounded-2xl p-1 transition-colors box-content align-middle text-center text-sm tracking-wide'>
             <Bars3Icon className="h-6 w-6 m-1 bg-transparent text-black dark:text-white text-center"/>
-            <MenuModal isVisible={mobMenu}/>
+            <MenuModal isVisible={mobMenu} setIsVisible={setMobMenu} />
           </button>
         </div>
         <div className="flex items-center m-0 p-2">

@@ -12,7 +12,7 @@ import links from "../../api/links.json"
 import MainButton from "../UI/MainButton";
 import Link from "next/link";
 
-const LastMaraList = ({ streamers, marathons, curMar }) => {
+const LastMaraList = ({ marathons, curMar }) => {
   const [maraPics, setMaraPics] = useState([mPic1, mPic2, mPic3, mPic4, mPic5])
 
   return (
