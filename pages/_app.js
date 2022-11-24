@@ -22,18 +22,19 @@ Router.events.on('routeChangeError', () => NProgress.done());
 
 function MyApp({ Component, pageProps }) {
 
-  const [stateSnow, setStateSnow] = useState(settings.isSnow)
+  const [stateSnow, setStateSnow] = useState(true)
   useEffect(() => {
-    // hasCookie('snow') ? setStateSnow(getCookie('snow')) : setCookie('snow', settings.isSnow, {maxAge: 60 * 60 * 24})
-    if (localStorage.getItem('snow') == null) localStorage.setItem('snow', settings.isSnow)
-    else if (localStorage.getItem('snow') == 'true') setStateSnow(true)
-    else setStateSnow(false)
+    if (settings.isSnow) {
+      if (localStorage.getItem('snow') == null) localStorage.setItem('snow', true)
+      else if (localStorage.getItem('snow') == 'true') setStateSnow(true)
+      else setStateSnow(false)
+    }
   }, [])
   
 
   return(
     <ThemeProvider attribute='class' defaultTheme={settings.defaultTheme} enableSystem>
-      <Snow stateSnow={stateSnow}/>
+      {(settings.isSnow) ? <Snow stateSnow={stateSnow}/> : null}
       <NavBar stateSnow={stateSnow} setStateSnow={setStateSnow}/>
       <Component {...pageProps} />
     </ThemeProvider>
