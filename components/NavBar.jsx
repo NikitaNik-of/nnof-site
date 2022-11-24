@@ -46,8 +46,9 @@ const NavBar = ( {stateSnow, setStateSnow} ) => {
             <MenuModal isVisible={mobMenu} setIsVisible={setMobMenu} />
           </button>
         </div>
-        <div className="flex items-center m-0 p-2">
+        <div className="flex items-center m-0 p-2 space-x-1">
           <ThemeChng/>
+          <SnowSwitch setStateSnow={setStateSnow} stateSnow={stateSnow}/>
         </div>
       </div>
     </nav>
