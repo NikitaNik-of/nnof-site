@@ -3,13 +3,15 @@ import { useRouter } from "next/router";
 import React, { useState } from "react";
 import ThemeChng from "./ThemeChng";
 import NavBtn from "./UI/NavBtn";
-import { Bars3Icon } from "@heroicons/react/24/outline"
+import { Bars3Icon,  } from "@heroicons/react/24/outline"
+import { Switch } from "@headlessui/react";
 import MenuModal from "./UI/MenuModal";
 import pagesInfo from "../api/pages.json"
 import settings from "../api/settings.json";
+import SnowSwitch from "./UI/SnowSwitch";
 
 
-const NavBar = () => {
+const NavBar = ( {stateSnow, setStateSnow} ) => {
   const curPage = useRouter().pathname;
   const [Pages, setPages] = useState(pagesInfo.navPages);
   const [mobMenu, setMobMenu] = useState(false)
@@ -32,8 +34,9 @@ const NavBar = () => {
             </Link>
           ))}
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center space-x-2">
           <ThemeChng/>
+          <SnowSwitch setStateSnow={setStateSnow} stateSnow={stateSnow}/>
         </div>
       </div>
       <div className="flex my-auto mx-2 w-full justify-between items-center lg:hidden"> {/* mobile navbar container */}

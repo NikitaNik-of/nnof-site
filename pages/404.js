@@ -46,7 +46,6 @@ export default function NotFound() {
 
   return(
   <div>
-    <NavBar/>
     <div className="flex justify-center transition-colors h-full overflow-visible">
         <div className={"overflow-visible flex  w-4/5 place-content-center items-center flex-col h-screen min-h-[4.75rem] text-center font-semibold" + motd.cl}>
           <h1 className="text-7xl mb-1">404</h1>

@@ -40,7 +40,6 @@ export default function Marathon() {
 
     return(
     <div className=" font-igraSans">
-      <NavBar className="z-40"/>
       {mounted
       ?<div>{
         (state[0] == 1)

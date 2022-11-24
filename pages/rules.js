@@ -14,7 +14,6 @@ export default function Rules() {
   const [ruleType, setRuleType] = useState(rules.discord)
   return (
     <div className='scroll-smooth'>
-        <NavBar/>
         <Layout className='mt-16'>
             <Head>
                 <title>Правила сообщества</title>

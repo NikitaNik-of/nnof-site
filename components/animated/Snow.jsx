@@ -118,10 +118,11 @@ const Snow = ({stateSnow}) => {
   }
 
   useEffect(() => {
-    if (stateSnow) snowin()
-  }, [])
-  
-  if (!stateSnow) return null
+    console.log("wow")
+    if (stateSnow == true) snowin()
+  }, [stateSnow])
+
+  if (stateSnow == false) return null
   return (
     <canvas className='fixed inset-0 -z-10 ' id="canvas"></canvas>
   )
