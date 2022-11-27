@@ -10,6 +10,7 @@ import NavBar from '../components/NavBar';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { hasCookie, getCookie, setCookie } from 'cookies-next';
+import Footer from '../components/Footer';
 
 
 Router.events.on('routeChangeStart', () => {
@@ -37,6 +38,7 @@ function MyApp({ Component, pageProps }) {
       {(settings.isSnow) ? <Snow stateSnow={stateSnow}/> : null}
       <NavBar stateSnow={stateSnow} setStateSnow={setStateSnow}/>
       <Component {...pageProps} />
+      <Footer version={settings.version}/>
     </ThemeProvider>
   )
 }
