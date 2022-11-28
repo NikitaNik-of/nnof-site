@@ -22,7 +22,7 @@ export default function Rules() {
         </Layout>
         <SubRules bodyname={ruleType.bodyName}/>
         <TabRules rules={rules} ruleType={ruleType} setRules={setRuleType}/>
-        <div className='bg-gray-300/30 dark:bg-gray-600/10 flex justify-center my-8 py-16 -skew-y-3'>
+        <div className='bg-gray-300/30 dark:bg-gray-600/10 flex justify-center my-8 mb-16 py-16 -skew-y-3'>
           <div className="py-2 lg:px-4 w-11/12 lg:w-3/4 text-sm lg:text-base skew-y-3 flex flex-col flex-start">
             {ruleType.ruleList.map((rule) => (
               <div key={rule.id} className={'grid-cols-[_32px_1fr] md:grid-cols-[_40px_1fr] grid my-2 items-start'}>
