@@ -76,12 +76,12 @@ const MenuModal = ({isVisible, setIsVisible}) => {
                   ))}
               </Dialog.Panel>
             </Transition.Child>
-            <div className='flex justify-center'>
+            {/* <div className='flex justify-center'>
               <div className='absolute bottom-2 opacity-20 flex justify-between w-11/12'>
                 <div>{"© NikitaNik_of 2022"}</div>
                 <div>{"v" + settings.version}</div>
               </div>
-            </div>
+            </div> */}
           </div>
         </Transition.Child>
       </Dialog>

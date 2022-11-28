@@ -23,7 +23,7 @@ const Footer = ( {version} ) => {
           <Link href="/links" className={cl + " px-2"}>Ccылки</Link>
           <a href='https://www.twitch.tv/nikitanik_of/' className={cl + " px-2"}>Прямой эфир</a>
         </div>
-        <div className='flex justify-between space-x-2 mt-2 text-[14px]'>
+        <div className='flex justify-between w-full mt-2 text-[14px]'>
           <div className=''>{"© NikitaNik_of 2022"}</div>
           <div className=''>{"v" + version}</div>
         </div>

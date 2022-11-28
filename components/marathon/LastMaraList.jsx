@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { PhotoIcon } from "@heroicons/react/24/outline";
 import Layout from "../Layout";
 import mPic1 from "../../public/images/marathons/mara1.png"
 import mPic2 from "../../public/images/marathons/mara2.png"
@@ -36,11 +37,16 @@ const LastMaraList = ({ marathons, curMar }) => {
                   <div className="text-base md:text-2xl ">{"Эстафета #" + (curMar - key)}</div>  
                   <div className="text-sm md:text-lg text-gray-600 dark:text-gray-500 mb-4">{marathons[curMar - key - 1].dateStr}</div>
                   {marathons[curMar - key - 1].streamersID.map((stremID, key2)=>(
-                    <StreamerSmall key={key2} stremID={stremID} times={marathons[curMar - key - 1].times} />
+                    <StreamerSmall key={key2} pos={key2} stremID={stremID} times={marathons[curMar - key - 1].times} />
                   ))}
-                  <div className="absolute bottom-4 right-4">
-                    <MainButton disabled>Картинка-анонс</MainButton>
-                  </div>
+                  <Link href={"/images/marathons/mara"+ (curMar - key) +".png"} className="absolute bottom-4 right-4">
+                    <MainButton className="align-middle">
+                      <div className="mr-2 h-6 w-6 transition-all">
+                        <PhotoIcon/>
+                      </div>
+                      Анонс
+                    </MainButton>
+                  </Link>
                 </div>
               : null))}
           </div>

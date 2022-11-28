@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect } from 'react';
 
-const Snow = ({stateSnow}) => {
+const Snowing = ({stateSnow}) => {
 
   const snowin = () => {
     (function() {
@@ -118,14 +118,13 @@ const Snow = ({stateSnow}) => {
   }
 
   useEffect(() => {
-    console.log("wow")
     if (stateSnow == true) snowin()
   }, [stateSnow])
 
   if (stateSnow == false) return null
   return (
-    <canvas className='fixed inset-0 -z-10 ' id="canvas"></canvas>
+    <canvas className='fixed inset-0 -z-10 h-full w-full' id="canvas"></canvas>
   )
 }
 
-export default Snow
+export default Snowing

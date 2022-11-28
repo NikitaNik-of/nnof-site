@@ -4,7 +4,7 @@ import maraInfo from "../../api/streamers.json"
 import StreamerImage from './StreamerImage'
 import StreamerImageSmall from './StreamerImageSmall'
 
-const StreamerSmall = ( {stremID, times, className} ) => {
+const StreamerSmall = ( {pos, stremID, times, className} ) => {
   const skinLoader = ({ src }) => {
     return `https://render.skinmc.net/3d.php?user=${src}&vr=-30&hr0&hrh=45&aa=&headOnly=true&ratio=50`;
   };
@@ -31,7 +31,7 @@ const StreamerSmall = ( {stremID, times, className} ) => {
       <div className="ml-4 text-left">
         <div className="">{streamerInfo.name}</div>
         <div className="md:mt-1 text-sm text-gray-500">
-          {times[0] + " - " + times[1]}
+          {times[pos] + " - " + times[pos + 1]}
         </div>
       </div>
     </div>
