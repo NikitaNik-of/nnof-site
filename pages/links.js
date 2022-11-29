@@ -14,7 +14,6 @@ export default function Links() {
 
     return(
     <div className=" font-igraSans">
-        <NavBar/>
         <Layout className='my-16'>
             <Head>
                 <title>Полезные ссылки</title>

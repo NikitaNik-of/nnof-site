@@ -40,7 +40,6 @@ export default function Marathon() {
 
     return(
     <div className=" font-igraSans">
-      <NavBar className="z-40"/>
       {mounted
       ?<div>{
         (state[0] == 1)
@@ -60,7 +59,7 @@ export default function Marathon() {
         />
       </Layout>
       }
-      <LastMaraList streamers={maraInfo.profiles} marathons={maraInfo.marathons} curMar={maraInfo.curMarathon - 1}/>
+      <LastMaraList marathons={maraInfo.marathons} curMar={maraInfo.curMarathon - 1}/>
     </div>
     )
 }
