@@ -36,7 +36,7 @@ const NavBar = ( {stateSnow, setStateSnow} ) => {
         </div>
         <div className="flex items-center space-x-2">
           <ThemeChng/>
-          <SnowSwitch setStateSnow={setStateSnow} stateSnow={stateSnow}/>
+          {settings.isSnow ? <SnowSwitch setStateSnow={setStateSnow} stateSnow={stateSnow}/> : null}
         </div>
       </div>
       <div className="flex my-auto mx-2 w-full justify-between items-center lg:hidden"> {/* mobile navbar container */}
@@ -48,7 +48,8 @@ const NavBar = ( {stateSnow, setStateSnow} ) => {
         </div>
         <div className="flex items-center m-0 p-2 space-x-1">
           <ThemeChng/>
-          <SnowSwitch setStateSnow={setStateSnow} stateSnow={stateSnow}/>
+          {console.log(settings.isSnow)}
+          {settings.isSnow ? <SnowSwitch setStateSnow={setStateSnow} stateSnow={stateSnow}/> : null}
         </div>
       </div>
     </nav>
