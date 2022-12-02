@@ -32,11 +32,11 @@ const TitleHead = ({title, subtitle, hidtitle, imgName, ...props}) => {
         <div className='flex justify-center'>
           <Image alt="" src={src(imgName)} width={80} height={80} placeholder='blur' unoptimized/>
         </div>
-        <SlideUp className={'lg:mt-4 lg:mb-12 mt-2 mb-6 text-3xl lg:text-5xl' + issnow(settings.isSnow)}>
+        <SlideUp className={'lg:mt-4 lg:mb-12 mt-2 mb-6 text-3xl lg:text-5xl ' + issnow(settings.isSnow)}>
             {title}
         </SlideUp>
-        <SlideUp pauseFor={200} className={' mt-5 text-base lg:text-lg' + issnow(settings.isSnow)}>{subtitle}</SlideUp>
-        <SlideUp pauseFor={300} className={' my-1 text-xs lg:text-base' + ( settings.isSnow ? issnow(settings.isSnow) :'dark:text-gray-700 text-gray-300')}>{hidtitle}</SlideUp>
+        <SlideUp pauseFor={200} className={' mt-5 text-base lg:text-lg ' + issnow(settings.isSnow)}>{subtitle}</SlideUp>
+        <SlideUp pauseFor={300} className={' my-1 text-xs lg:text-base ' + ( settings.isSnow ? issnow(settings.isSnow) :' dark:text-gray-700 text-gray-300')}>{hidtitle}</SlideUp>
     </div>
   )
 }

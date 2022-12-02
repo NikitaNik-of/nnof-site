@@ -3,7 +3,7 @@ import React from "react";
 import { useState } from "react";
 import StreamerImage from "./StreamerImage";
 
-const StreamerCard = ({ streamerInfo, times, className }) => {
+const StreamerCard = ({ streamerInfo, times, className, type }) => {
   const skinLoader = ({ src }) => {
     return `https://render.skinmc.net/3d.php?user=${src}&hr=30&vr=-20&hrh=0&vrll=20&vrrl=-20&vrla=-20&vrra=20&aa=true&ratio=25`;
   };
@@ -40,9 +40,12 @@ const StreamerCard = ({ streamerInfo, times, className }) => {
       </div>
       <div className="ml-4 md:ml-0 text-left md:text-center md:mt-4 ">
         <div className="text-xl lg:text-2xl">{streamerInfo.name}</div>
+        {(type=="M")
+        ?
         <div className="md:mt-1 text-base lg:text-lg text-gray-500">
           {times[0] + " - " + times[1]}
         </div>
+        : null }
       </div>
     </a>
   );

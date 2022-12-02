@@ -17,7 +17,7 @@ export default function Marathon() {
 
     const stateMar = () => {
       // 0=before, 1=playing, 2=after
-      let marInf = maraInfo.marathons[maraInfo.curMarathon - 1]
+      let marInf = maraInfo.marathons[maraInfo.curMarathon]
       let now = new Date()
       let diffs = []
       let k = 0

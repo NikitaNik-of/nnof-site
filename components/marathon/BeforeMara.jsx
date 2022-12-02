@@ -8,7 +8,8 @@ import offline from "../../public/images/OFFLINECHAT.png"
 import Image from "next/image";
 
 const BeforeMara = ({ maraInfo, isBefore = [0, 0] }) => {
-  const [curMara, setCurMara] = useState(maraInfo.curMarathon - 1);
+  const [curMara, setCurMara] = useState(maraInfo.curMarathon);
+  const [curType, setCurType] = useState(maraInfo.marathons[curMara].type)
   return (
     <div className={(isBefore[0] == 1) ? "hidden" : "visible"}>
       <Layout className="mt-16">
@@ -22,12 +23,15 @@ const BeforeMara = ({ maraInfo, isBefore = [0, 0] }) => {
           hidtitle='"А кому мне рейд кидать?" - кто-то из участников эстафеты'
         />
       </Layout>
-      <div className={(isBefore[0]==0 ? "bg-lime-900/40" : " bg-red-900/30") + " my-8 py-12 -skew-y-3 flex flex-col justify-center items-center"}>
+      <div className={(isBefore[0]==0 ? "dark:bg-lime-900/40 bg-lime-200/40" : " dark:bg-red-900/30 bg-red-300/40") + " my-8 py-12 -skew-y-3 flex flex-col justify-center items-center"}>
         <Image placeholder="blur" className="skew-y-3 mb-4" alt="" src={isBefore[0]==0 ? hype : offline} width={70}/>
-        <div className="text-xl lg:text-3xl text-center skew-y-3">{isBefore[0]==0 ? "Эстафета еще не началась!" : "Эстафета уже завершилась"}</div>
-        <div className="lg:text-xl text-center mt-2 skew-y-3">{isBefore[0]==0 ? "Совсем скоро будет начало, заходите!" : "Но мы уже планируем следующую эстафету."}</div>
+        <div className="text-xl lg:text-3xl text-center skew-y-3">{isBefore[0]==0 ? "Скоро всё начнется!" : "Всё уже завершилось"}</div>
+        <div className="lg:text-xl text-center mt-2 skew-y-3">{isBefore[0]==0 ? "Начало уже не за горами, заходите!" : "Но мы уже планируем следующие мероприятия."}</div>
       </div>
-      <div className="text-2xl text-center mt-8">{"Участники эстафеты #" + maraInfo.curMarathon}</div>
+      <div className=" text-center mt-8">
+        <div className="text-2xl mb-1">{(curType=="M") ? ("Участники эстафеты #" + maraInfo.marathons[curMara].id) : ("Участники события #" + maraInfo.marathons[curMara].id)}</div>
+        {isBefore[0]==0 ? <div className="text-lg text-gray-600 dark:text-gray-300 rounded-full bg-lime-200 dark:bg-lime-900 px-2 inline-block">{"Начинаем "+ (maraInfo.marathons[curMara].dateStr) +" в " + maraInfo.marathons[curMara].times[0]}</div> : null}
+      </div>
       <div className="flex justify-center p-4 flex-wrap lg:mx-8">
         {maraInfo.marathons[curMara].streamersID.map((streamer, key) => (
           <StreamerCard
@@ -37,6 +41,7 @@ const BeforeMara = ({ maraInfo, isBefore = [0, 0] }) => {
               maraInfo.marathons[curMara].times[key],
               maraInfo.marathons[curMara].times[key + 1],
             ]}
+            type={curType}
           />
         ))}
       </div>
